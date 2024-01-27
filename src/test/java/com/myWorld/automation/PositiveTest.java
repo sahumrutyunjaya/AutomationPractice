@@ -20,4 +20,12 @@ public class PositiveTest {
 		driver.quit();
 	}
 	
+	@Test
+	public void verifyLogin() {
+		System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+		driver.get("https://the-internet.herokuapp.com/");
+		driver.quit();
+	}
+	
 }
